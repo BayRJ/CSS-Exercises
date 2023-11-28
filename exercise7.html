@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  }
+
+  body {
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+  }
+
+  .nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #314152;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  }
+
+  .nav-list {
+  display: flex;
+  margin-right: 2rem;
+  list-style-type: none;
+  }
+
+  .nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+  color: white;
+  text-decoration: none;
+  }
+
+  .nav-list a:hover {
+  color: blue;
+  }
+
+  #sidebar {
+  position: fixed;
+  min-width: 70px;
+  top: 200px;
+  left: 0px;
+  width: 10px;
+  height: 31%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  background-color:  #314152;
+  }
+
+  #sidebar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #sidebar li {
+    color: #4d4e53;
+    border-bottom: 1px solid white;
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
+  
+  #sidebar a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .sidebar-link img {
+    height: 24px;
+    width: 24px;
+  }
+
+  main {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+
+  .products-section {
+    width: 350px;
+    height: 420px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 12px;
+  }
+
+  .products-section header {
+    align-items: center;
+  }
+
+  </style>
+</head>
+<body>
+  <nav id="navbar" class="nav">
+    <ul>
+
+
+    </ul>
+    <ul class="nav-list" id="nav-right">
+      <li> <a href="#welcome-section">Login</a></li>
+      <li> <a href="#projects">Request a Demo</a></li>
+      <li> <a href="#contact">Sign Up Free</a></li>
+    </ul>
+  </nav>
+
+  <nav id="sidebar">
+    <ul>
+      <li>
+        <a class="sidebar-link" href="#Introduction">
+          <img src="exercise7-icons/facebook.png">
+        </a>
+      </li>
+      <li> 
+        <a class="sidebar-link" href="#What_you_should_already_know">
+          <img src="exercise7-icons/instagram.png">
+        </a>
+      </li>
+      <li>
+        <a class="sidebar-link" href="#JavaScript_and_Java">
+          <img src="exercise7-icons/pinterest.png">
+      </a>
+      </li>
+      <li>
+        <a class="sidebar-link" href="#Variables">
+          <img src="exercise7-icons/twitter.png">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="products-section">
+      <header>Fashion trends you like</header>
+      <div class="product-display">
+        <img src="">
+        Dresses
+      </div>
+      <div class="product-display">
+        <img src="">
+        Knits
+      </div>
+      <div class="product-display">
+        <img src="">
+        Jackets
+      </div>
+      <div class="product-display">
+        <img src="">
+        Jewelry
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
