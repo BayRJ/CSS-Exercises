@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: white;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #314152;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+      z-index: 10;
+    }
+
+    .nav-list {
+      display: flex;
+      margin-right: 2rem;
+      list-style-type: none;
+    }
+
+    .nav-list a {
+      display: block;
+      font-size: 2.2rem;
+      padding: 2rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-list a:hover {
+      background-color: rgb(48, 48, 180);
+    }
+
+    .sign-in-link {
+      margin-left: 950px;
+    }
+
+    .title {
+      color: rgb(212, 212, 45);
+      font-weight: bold;
+    }
+
+    #song_hits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: ce nter;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid pink;
+  border-radius: 3px;
+}
+
+.procuct > .level {
+  background-color: #ddd;
+  color: pink;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: pink;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: lightpink;
+  transition: background-color 1s;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px pink solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+
+<body>
+  <nav id="navbar" class="nav">
+    <ul>
+
+
+    </ul>
+    <ul class="nav-list" id="nav-right">
+      <li> <a class="title" href="#welcome-section">CardMusTarD</a></li>
+      <li> <a href="#projects">ABOUT US</a></li>
+      <li> <a href="#contact">ARTICLE</a></li>
+      <li> <a class="sign-in-link">SIGN IN</a></li>
+    </ul>
+  </nav>
+
+  <section id="song_hits">
+    <div class="product" id="tenor">
+      <div class="level">Pink Venom</div>
+      <h2>900M Views</h2>
+      <ol>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+      </ol>
+      <button class="btn">View</button>
+    </div>
+    <div class="product" id="tenor">
+      <div class="level">Du du</div>
+      <h2>800M Views</h2>
+      <ol>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+      </ol>
+      <button class="btn">View</button>
+    </div>
+    <div class="product" id="tenor">
+      <div class="level">Boombayah</div>
+      <h2>500M Views</h2>
+      <ol>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+      </ol>
+      <button class="btn">View</button>
+    </div>
+  </section>
+
+</body>
+
+</html>
